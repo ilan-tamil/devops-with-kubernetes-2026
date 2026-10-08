@@ -1,0 +1,13 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The starting web server for the course todo application.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
