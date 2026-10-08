@@ -11,8 +11,13 @@ if (!Number.isInteger(port) || port < 1 || port > 65535) {
 const randomString = crypto.randomUUID();
 
 const server = http.createServer((_request, response) => {
-  response.writeHead(200, { "Content-Type": "text/plain; charset=utf-8" });
-  response.end("Log output is running.\n");
+  const status = {
+    timestamp: new Date().toISOString(),
+    randomString,
+  };
+
+  response.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+  response.end(JSON.stringify(status));
 });
 
 server.listen(port, () => {
