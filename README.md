@@ -5,8 +5,8 @@ Course project submissions and Kubernetes manifests.
 ## Exercises
 
 - `0.1`: course introduction completed in the MOOC.fi portal
-- `1.1`: [Log output](./tree/main/log_output)
-- `1.2`: [Todo app, step 1](./tree/main/todo_app)
+- `1.1`: [Log output](./log_output)
+- `1.2`: [Todo app, step 1](./todo_app)
 - `1.3`: declarative Log output deployment in `log_output/manifests`
 - `1.4`: declarative Todo app deployment in `todo_app/manifests`
 
